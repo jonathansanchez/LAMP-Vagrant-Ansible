@@ -1,0 +1,5 @@
+- name: "Install Apache"
+  yum: pkg=httpd state=present
+
+- name: "Restart Apache"
+  service: name=httpd state=restarted

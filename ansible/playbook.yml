@@ -1,0 +1,10 @@
+---
+- name: Provision Development Environment
+  hosts: "{{ host }}"
+  become: true
+  become_user: root
+  roles:
+    - epel
+    - apache
+    - php
+    - mysql
