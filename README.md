@@ -18,7 +18,7 @@ Provision independent machines:
 $ ansible-playbook /vagrant/ansible/playbook.yml -i /vagrant/ansible/inventory/hosts -e host="www"
 ```
 
-You must create the keys and leave them in the root with the name "dev_provision_key" or whatever you want:
+You must create the keys and leave them in the root with the name "provision_key" or whatever you want:
 ```sh
 $ ssh-keygen -t rsa ...
 ```
